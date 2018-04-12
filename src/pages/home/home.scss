@@ -1,3 +1,50 @@
-page-home {
+ion-slide {
+	background: url('assets/img/images2.jpg') no-repeat center fixed;
+}
+.diag {
+	position: absolute;
+	z-index: 1;
+	width:100%;
+	top: 0;
+	height:66%;
+}
 
+ion-icon {
+	margin-top:40%;
+	font-size:7em;
+}
+
+h2 {
+	color: #1e4154;
+	padding-top:80%;
+	font-weight:bold;
+	font-size:1em;
+}
+.frame {
+	color: #1e4154 !important;
+}
+p {
+	color: #1e4154;
+	width:80%;
+	display:block;
+	margin: auto;
+	font-size:.9en;
+}
+
+.swiper-pagination-bullet-active {
+	background: #778899;
+}
+
+.swiper-pagination {
+    bottom: 12% !important;
+}
+
+#skip {
+	position:absolute;
+	bottom: 20px;
+	width:100%;
+	background:none !important;
+	text-align:center;
+	cursor:pointer;
+	z-index:5; 
 }

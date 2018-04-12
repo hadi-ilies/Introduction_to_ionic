@@ -1,14 +1,44 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+	<ion-slides pager (ionSlideDidChange)="slideChanged()" (ionSlideDrag)= "SlideMoved()">	
+	<ion-slide>
+		<div class= "diag">
+			<ion-icon ios= "ios-analytics" md= "md-analytics" color= "primary" [@bounce]= 'state' (@bounce.done)="animationDone()"></ion-icon>
+		</div>
+		<div>
+			<h2>track all the last sportives news</h2> 
+			<p>whatever it's about football, basketball or martial arts...</p>
+		</div>	
+		</ion-slide>
+	<ion-slide>
+		<div class= "diag">
+			<ion-icon ios= "ios-chatboxes" md= "md-chatboxes" color= "primary" [@bounce]= 'state'></ion-icon>
+		</div>
+		<div>
+			<h2>debate about sportive topic</h2>
+			<p>what is the best strategy to apply for madrid football team for example !</p>
+			<br>
+			<p>also useless topics !</p>
+		</div>	
+		</ion-slide>
+	<ion-slide>
+		<div class= "diag">
+			<ion-icon ios= "ios-home" md= "md-home" color= "primary" [@bounce]= 'state'></ion-icon>
+		</div>
+		<div>
+			<h2>follow other debaters</h2>
+			<p>make many friends</p>
+		</div>
+		</ion-slide>
+	<ion-slide>
+		<div class= "diag">
+			<ion-icon ios= "ios-trophy" md= "md-trophy" color= "primary" [@bounce]= 'state'></ion-icon>
+		</div>
+		<div>
+			<h2>be the best</h2>
+			<p>win many debates, stock coins and be at the top of the ranking</p>
+		</div>
+		</ion-slide>
+	</ion-slides>
+		<button (click)="skip()" id="skip">{{ skipMsg }}</button>
 </ion-content>
